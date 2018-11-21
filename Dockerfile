@@ -1,7 +1,7 @@
 # Instal additional packages for zabbix checks
-# Based on zabbix-server-mysql:latest
+# Based on zabbix-server-mysql:alpine-4.0.0
 
-FROM zabbix/zabbix-server-mysql:alpine-3.4.5
+FROM zabbix/zabbix-server-mysql:alpine-4.0.0
 MAINTAINER Stanislav Osipov <stanislav.osipov@jetbrains.com>
 RUN apk update && \
     apk -U add openssl bc jq curl perl perl-json py-pip && \
