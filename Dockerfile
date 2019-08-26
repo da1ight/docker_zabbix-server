@@ -1,7 +1,7 @@
 # Instal additional packages for zabbix checks
-# Based on zabbix-server-mysql:alpine-4.2.2
+# Based on zabbix-server-mysql:alpine-4.2.5
 
-FROM zabbix/zabbix-server-mysql:alpine-4.2.2
+FROM zabbix/zabbix-server-mysql:alpine-4.2.5
 MAINTAINER Stanislav Osipov <stanislav.osipov@jetbrains.com>
 ADD zabbix-entrypoint.sh /
 ENTRYPOINT /zabbix-entrypoint.sh
