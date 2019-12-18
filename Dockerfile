@@ -7,7 +7,7 @@ ADD zabbix-entrypoint.sh /
 ENTRYPOINT /zabbix-entrypoint.sh
 
 RUN apk update && \
-    apk -U add openssl openssh bc jq curl git perl perl-json py-pip grep && \
+    apk -U add openssl openssh bc jq curl git perl perl-json py-pip grep docker && \
     rm -rf /var/cache/apk/*
 
 RUN pip install -q python-dateutil xmltodict
